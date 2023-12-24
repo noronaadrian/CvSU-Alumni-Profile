@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html data-wf-domain="cvsu-alumni-profile-group-1" data-wf-page="657e60478331325e703d1d3f"
 	data-wf-site="657e60478331325e703d1cf1" lang="en">
-
+	
 <head>
 	<meta charset="utf-8" />
 	<title>CvSU Alumni Profile (GROUP 1)</title>
@@ -34,16 +34,52 @@
 		rel="apple-touch-icon" />
 	<script
 		type="text/javascript">window.__WEBFLOW_CURRENCY_SETTINGS = { "currencyCode": "USD", "symbol": "$", "decimal": ".", "fractionDigits": 2, "group": ",", "template": "{{wf {\"path\":\"symbol\",\"type\":\"PlainText\"} }} {{wf {\"path\":\"amount\",\"type\":\"CommercePrice\"} }} {{wf {\"path\":\"currencyCode\",\"type\":\"PlainText\"} }}", "hideDecimalForWholeNumbers": false };</script>
+	<!-- light mode and dark mode styles -->
+		<style>
+			#content.light-mode {
+				background-color: #ffffff;
+				color: #171717;
+			}
+			#contant.light-mode a {
+				color: #F0F0F0;
+			}
+			#content.light-mode path {
+				fill: #F0F0F0;
+			}
+			#content.dark-mode {
+				background-color: #171717;
+				color: #ffffff;
+			}
+			#content.dark-mode a {
+				color: #ffffff;
+			}
+			#content.dark-mode a.w--current {
+				color: #78ffb0;
+			}
+			#content.dark-mode path {
+				fill: #2f2f2f;
+			}
+		</style>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-144748173-3"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() { dataLayer.push(arguments); }
+			gtag('js', new Date());
+	
+			gtag('config', 'UA-144748173-3');
+		</script>
 </head>
 
 <body>
-	<div id="Announcement-Bar" class="banner-section"></div>
+	<div id="content" class="light-mode">
+        <div id="Announcement-Bar" class="banner-section"></div>
 	<div data-collapse="small" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease"
 		role="banner" class="nav-bar w-nav">
 		<div class="nav-container w-container">
-			<div class="logo-div"><a href="/CvSU Alumni Website/base_website.html" aria-current="page" class="nav-logo w-inline-block w--current"><img
-						src="/CvSU Alumni Website/Assets/logo.svg"
-						width="208" alt="" class="logo" /></a></div>
+			<div class="logo-div"><a href="/CvSU Alumni Website/base_website.html" aria-current="page"
+					class="nav-logo w-inline-block w--current"><img src="/CvSU Alumni Website/Assets/logo.svg" width="208"
+						alt="" class="logo" /></a></div>
 			<nav role="navigation" class="nav-content w-nav-menu">
 				<footer class="search-banner">
 					<div class="search-section">
@@ -52,14 +88,62 @@
 								required="" /><input type="submit" value="Search" class="hidden w-button" /></form>
 					</div>
 				</footer>
-				<div class="nav-cta-button-container"><a href="/CvSU Alumni Website/Web pages/profiles/Alumni_profiles.html" class="nav-link cta-button w-nav-link">All
-						Profiles</a></div><a href="/CvSU Alumni Website/Web pages/about/about_website.html" class="nav-link cta-button w-nav-link">About</a>
+				<div class="nav-cta-button-container"><a href="/CvSU Alumni Website/Web pages/profiles/Alumni_profiles.html"
+						class="nav-link cta-button w-nav-link">All
+						Profiles</a></div><a href="/CvSU Alumni Website/Web pages/about/about_website.html"
+					class="nav-link cta-button w-nav-link">About</a>
+                <div class="nav-cta">
+                    <div class="toggle-theme w-embed"><label for="toggleTheme" title="Toggle theme">
+                            <input id="toggleTheme" name="theme" type="checkbox">
+                            <div class="toggleTheme toggleThemeIcon"></div>
+                        </label>
+                        <style>
+                            .toggleTheme {
+                                position: relative;
+                                margin: auto;
+                                right: 0;
+                                top: 0;
+                                bottom: 0;
+                                cursor: pointer;
+                                height: 2.4rem;
+                                background-color: #E8E8E8;
+                                transition: .4s;
+                                border-radius: 8rem;
+                                width: 4.4rem;
+                                padding: .2rem;
+                            }
+                            .toggleTheme:before {
+                                position: absolute;
+                                content: '';
+                                height: 2rem;
+                                width: 2rem;
+                                background-color: #FFFFFF;
+                                text-align: center;
+                                transition: .4s;
+                                border-radius: 4rem;
+                                box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+                                background-image: url("/CvSU Alumni Website/Assets/sun.svg");
+                            }
+                            input[type="checkbox"] {
+                                display: none;
+                            }
+                            input:checked+.toggleTheme {
+                                background-color: #707AFF;
+                            }
+                            input:checked+.toggleTheme:before {
+                                content: '';
+                                transform: translateX(calc(3.8rem - 1.6rem - 0.2rem));
+                                background-image: url("/CvSU Alumni Website/Assets/moon.svg");
+                            }
+                        </style>
+                    </div>
+                </div>
 			</nav>
 			<div class="menu-button w-nav-button"><img
 					src="https://assets-global.website-files.com/657e60478331325e703d1cf1/657e60478331325e703d1d91_Menu%20Icon.svg"
 					loading="lazy" width="24" alt="" class="menu-icon" /></div>
-		</div>
-	</div>
+            </div>
+        </div>
 	<div class="page-wrapper">
 		<div class="section light-color-gradient">
 			<div class="container">
@@ -257,6 +341,31 @@
 		crossorigin="anonymous"></script>
 	<script src="/CvSU Alumni Website/script base.js"
 		type="text/javascript"></script>
+		
+	<script>
+        function setThemeFromCookie() {
+            var themeState = document.getElementById('content');
+            themeState.className = isThemeSelected() ? 'dark-mode' : 'light-mode';
+        }
+        function setThemeSwitchState() {
+            document.getElementById('toggleTheme').checked = isThemeSelected();
+        }
+        function isThemeSelected() {
+            return document.cookie.match(/theme=dark/i) != null;
+        }
+        function toggleTheme() {
+            var themeState = document.getElementById('content');
+            var currentState = themeState.className;
+            var newState = themeState.className == 'dark-mode' ? 'light-mode' : 'dark-mode';
+            themeState.className = newState;
+            document.cookie = 'theme=' + (newState == 'light-mode' ? 'light' : 'dark') + expires + "; path=/";
+        }
+        (function () {
+            setThemeFromCookie();
+            setThemeSwitchState();
+            document.getElementById('toggleTheme').onchange = toggleTheme;
+        })();
+    </script>
 </body>
 
 </html>

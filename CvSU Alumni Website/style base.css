@@ -8,6 +8,43 @@ body {
   margin: 0;
 }
 
+.light-mode {
+  display: block;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  background-color: #fff;
+}
+
+.toggle-theme {
+  position: relative;
+  display: block;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  -ms-grid-row-align: auto;
+  align-self: auto;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
+}
+
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -872,6 +909,10 @@ textarea.w-input, textarea.w-select {
     left: auto;
     right: auto;
   }
+  .toggle-theme {
+    position: relative;
+    display: block;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -941,9 +982,15 @@ textarea.w-input, textarea.w-select {
   .w-col-small-12 {
     width: 100%;
   }
+
+  .toggle-theme {
+    position: relative;
+    display: block;
+  }
 }
 
 @media screen and (max-width: 479px) {
+  
   .w-container {
     max-width: none;
   }
@@ -1006,6 +1053,11 @@ textarea.w-input, textarea.w-select {
 
   .w-col-tiny-12 {
     width: 100%;
+  }
+
+  .toggle-theme {
+    position: relative;
+    display: block;
   }
 }
 
