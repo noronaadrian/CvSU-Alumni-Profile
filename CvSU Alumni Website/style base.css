@@ -500,15 +500,17 @@ button, [type="button"], [type="reset"] {
 
 .w-form-done {
   text-align: center;
-  background-color: #ddd;
+  background-color: #36e4452c;
   padding: 20px;
+  border-radius: 9px;
   display: none;
 }
 
 .w-form-fail {
-  background-color: #ffdede;
+  background-color: #e436362c;
   margin-top: 10px;
   padding: 10px;
+  border-radius: 9px;
   display: none;
 }
 
