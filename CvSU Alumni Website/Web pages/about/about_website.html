@@ -27,9 +27,23 @@
         rel="apple-touch-icon" />
     <script
         type="text/javascript">window.__WEBFLOW_CURRENCY_SETTINGS = { "currencyCode": "USD", "symbol": "$", "decimal": ".", "fractionDigits": 2, "group": ",", "template": "{{wf {\"path\":\"symbol\",\"type\":\"PlainText\"} }} {{wf {\"path\":\"amount\",\"type\":\"CommercePrice\"} }} {{wf {\"path\":\"currencyCode\",\"type\":\"PlainText\"} }}", "hideDecimalForWholeNumbers": false };</script>
+
+    <!-- Get css icons from css.gg -->
+    <link href="https://css.gg/css?=|moon|sun" rel="stylesheet">
+
+    <!-- CSS for dark mode toggle button -->
+    <link href="/CvSU Alumni Website/dark-mode-toggle.css" rel="stylesheet">
+
+    <!-- Dark Reader API via jsDelivr CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/darkreader/darkreader.min.js"></script>
 </head>
 
 <body>
+    </div>
+    <!-- Dark mode toggle button -->
+    <div class="dark-mode-toggle">
+        <i class="gg-moon"></i>
+    </div>
     <div data-collapse="small" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease"
         role="banner" class="nav-bar w-nav">
         <div class="nav-container w-container">
@@ -130,6 +144,9 @@
         crossorigin="anonymous"></script>
     <script src="/CvSU Alumni Website/script base.js"
         type="text/javascript"></script>
+
+    <!-- JS for toggling dark mode -->
+    <script src="/CvSU Alumni Website/dark-mode-toggle.js"></script>
 </body>
 
 </html>
