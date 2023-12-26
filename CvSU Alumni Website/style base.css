@@ -8,68 +8,6 @@ body {
   margin: 0;
 }
 
-.light-mode {
-  display: block;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-  -ms-flex-align: start;
-  align-items: flex-start;
-  background-color: #fff;
-}
-
-#content.light-mode {
-  background-color: #ffffff;
-  color: #171717;
-}
-#contant.light-mode a {
-  color: #171717;
-}
-#content.light-mode path {
-  fill: #F0F0F0;
-}
-#content.dark-mode {
-  background-color: #171717;
-  color: #ffffff;
-}
-#content.dark-mode a {
-  color: #ffffff;
-}
-#content.dark-mode a.w--current {
- color: #707AFF;
-}
-  
-#content.dark-mode path {
-  fill: #2f2f2f;
-}
-
-.toggle-theme {
-  position: relative;
-  display: block;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-  -ms-flex-align: start;
-  align-items: flex-start;
-  -webkit-align-self: auto;
-  -ms-flex-item-align: auto;
-  -ms-grid-row-align: auto;
-  align-self: auto;
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 auto;
-  -ms-flex: 0 auto;
-  flex: 0 auto;
-}
-
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -299,26 +237,6 @@ body {
   font-family: Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
-}
-.cursor-dot {
-  width: 5px;
-  height: 5px;
-  background-color: white;
-}
-.cursor-outline {
-  width: 30px;
-  height: 30px;
-  border: 2px solid hsla(0, 0%, 100%, 0.5%);
-}
-.cursor-dot,
-.cursor-outline {
-  position: fixed;
-  top: 0;
-  left: 0;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  z-index: 1;
-  pointer-events: none;
 }
 
 img {

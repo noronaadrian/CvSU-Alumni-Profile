@@ -1,0 +1,21 @@
+/* styling for dark mode toggle button */
+div.dark-mode-toggle {
+    position: fixed; /* place on a fixed position on the page */
+    bottom: 10px; /* set position to be 8px from the bottom of the window */
+    left: 10px; /* 8px from the left side of the window */
+    z-index: 1000; /* display above other elements */
+    cursor: pointer; /* when hovering, you will get a pointer indicating you can click */
+    background: #fff; /* set initial background color (will be overriden for dark mode by DarkReader) */
+    color: #111; /* set initial icon color */
+    padding: 10px; /* add padding around the icon */
+    border-radius: 50%; /* make the button round */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); /* add a shadow */
+    transition: filter 0.8s ease;
+}
+
+/* styling for dark mode toggle button when hovering over */
+div.dark-mode-toggle:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); /* make the shadow deeper */
+    color: var(--grey);
+    transition: background-color .2s, transform .2s, color .2s;
+}
