@@ -36943,3 +36943,14 @@ function toggleTheme() {
   setThemeSwitchState();
   document.getElementById('toggleTheme').onchange = toggleTheme;
 })();
+var themeColorTest = new function() {
+  function e() {
+    "#87CEFA" === $themeColor.content ? $themeColor.content = "#1E90FF" : "#1E90FF" === $themeColor.content ? $themeColor.content = "#4169E1" : $themeColor.content = "#87CEFA",
+      setTimeout(e, 500)
+  }
+  this.init = function() {
+    $themeColor = document.querySelector("meta[name='theme-color']"),
+      e()
+  }
+};
+themeColorTest.init();
