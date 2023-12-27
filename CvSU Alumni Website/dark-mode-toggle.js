@@ -10,7 +10,7 @@ function toggleDarkMode(newState) {
         filter: invert(1);
         transition: filter 0.5s ease;
     }
-    body, .nav-bar, .footer {
+    body, .nav-bar, .footer, .section, .light-color-gradient {
         transition: background-color 0.2s ease;
     }
 </style>`;
@@ -47,7 +47,7 @@ function toggleDarkMode(newState) {
     .button {
         transition: filter 0.5s ease;
     }
-    body, .nav-bar, .footer {
+    body, .nav-bar, .footer, .section, .light-color-gradient {
         transition: background-color 0.2s ease;
     }
     </style>`;
