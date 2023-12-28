@@ -2485,7 +2485,7 @@ figcaption {
 
 .section.light-color-gradient {
   background-color: var(--back-grey);
-  background-image: linear-gradient(54deg, #3ca55c, rgba(255, 131, 122, 0) 28%), linear-gradient(241deg, #b5ac49, rgba(239, 152, 207, 0) 36%), linear-gradient(rgba(255, 255, 255, .35), rgba(255, 255, 255, .35)), url("https://assets-global.website-files.com/657e60478331325e703d1cf1/658191761c0ad8e3be86f725_Imus-Campus-scaled.jpg");
+  background-image: linear-gradient(54deg, #3ca55c, rgba(255, 131, 122, 0) 28%), linear-gradient(241deg, #b5ac49, rgba(239, 152, 207, 0) 36%), linear-gradient(rgba(255, 255, 255, .35), rgba(255, 255, 255, .35)), url("/CvSU Alumni Website/Assets/Imus-Campus-scaled.jpg");
   background-position: 0 0, 0 0, 0 0, 50%;
   background-size: auto, auto, auto, cover;
   position: relative;
@@ -2494,7 +2494,7 @@ figcaption {
 .section.daek-page-header {
   background-color: var(--black);
   color: var(--white);
-  background-image: radial-gradient(circle at 0%, rgba(107, 255, 89, .5), rgba(0, 0, 0, 0) 47%), radial-gradient(circle at 30% 150%, rgba(252, 255, 89, .5), rgba(0, 0, 0, 0) 58%), linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("https://assets-global.website-files.com/657e60478331325e703d1cf1/658191761c0ad8e3be86f725_Imus-Campus-scaled.jpg");
+  background-image: radial-gradient(circle at 0%, rgba(107, 255, 89, .5), rgba(0, 0, 0, 0) 47%), radial-gradient(circle at 30% 150%, rgba(252, 255, 89, .5), rgba(0, 0, 0, 0) 58%), linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("/CvSU Alumni Website/Assets/Imus-Campus-scaled.jpg");
   background-position: 0 0, 0 0, 0 0, 50% 35%;
   background-repeat: repeat, repeat, repeat, repeat;
   background-size: auto, auto, auto, cover;
