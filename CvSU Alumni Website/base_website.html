@@ -5,6 +5,7 @@
 <head>
 	<meta name="theme-color" content="#fff" />
 	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>CvSU Alumni Profile (GROUP 1)</title>
 	<meta content="Local website for your Alumni Profiles!" />
 	<meta content="CvSU Alumni - Local website for your Alumni Profiles!" property="og:title" />
@@ -102,7 +103,7 @@
 						<div id="student" role="listitem"
 							class="ebook-box w-dyn-item"><a href="/CvSU Alumni Website/Web pages/renzo_site/renzo_profile.html"
 								class="ebook-thumbnail w-inline-block"><img alt="Adiong, Jerico Renzo P."
-									src="/CvSU Alumni Website/Assets/sample img.png"
+									src="/CvSU Alumni Website/Assets/renzo files/renzo header.png"
 									class="image-cover" /></a>
 							<div class="paragraph small">Bachelor of Science in Computer Science</div><a href="#"
 								class="card-text-link w-inline-block">
@@ -274,6 +275,33 @@
 
 	<!-- JS for toggling dark mode -->
     <script src="/CvSU Alumni Website/dark-mode-toggle.js"></script>
+	<!-- parallax effect -->
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+		  const parallaxContainer = document.querySelector('.light-color-gradient');
+		  function handleMouseMove(event) {
+			const mouseX = event.clientX / window.innerWidth - 0.5;
+			const mouseY = event.clientY / window.innerHeight - 0.5;
+			parallaxContainer.style.backgroundPositionX = `${50 + mouseX * 20}%`;
+			parallaxContainer.style.backgroundPositionY = `${50 + mouseY * 20}%`;
+		  }
+	  
+		  function handleDeviceOrientation(event) {
+			const beta = event.beta; // range [-180, 180]
+			const gamma = event.gamma; // range [-90, 90]
+			const normalizedBeta = (beta + 90) / 180; // map beta to [0, 1]
+			const normalizedGamma = (gamma + 90) / 180; // map gamma to [0, 1]
+			parallaxContainer.style.backgroundPositionX = `${50 + normalizedGamma * 20}%`;
+			parallaxContainer.style.backgroundPositionY = `${50 + normalizedBeta * 20}%`;
+		  }
+	  
+		  if (window.DeviceOrientationEvent && window.location.protocol === "/CvSU Alumni Website/base_website.html") {
+			window.addEventListener('deviceorientation', handleDeviceOrientation);
+		  } else {
+			window.addEventListener('mousemove', handleMouseMove);
+		  }
+		});
+	  </script>
 </body>
 
 </html>
