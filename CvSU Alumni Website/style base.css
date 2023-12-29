@@ -2486,9 +2486,13 @@ figcaption {
 .section.light-color-gradient {
   background-color: var(--back-grey);
   background-image: linear-gradient(54deg, #3ca55c, rgba(255, 131, 122, 0) 28%), linear-gradient(241deg, #b5ac49, rgba(239, 152, 207, 0) 36%), linear-gradient(rgba(255, 255, 255, .35), rgba(255, 255, 255, .35)), url("/CvSU Alumni Website/Assets/Imus-Campus-scaled.jpg");
-  background-position: 0 0, 0 0, 0 0, 50%;
+  background-position: 50% 50%;
   background-size: auto, auto, auto, cover;
   position: relative;
+  overflow-x: hidden;
+  perspective: 1px;
+  perspective-origin: center top;
+  transform-style: preserve-3d;
 }
 
 .section.daek-page-header {
@@ -4910,10 +4914,13 @@ figcaption {
   }
 
   .section.light-color-gradient {
-    background-image: linear-gradient(54deg, #3ca55c, rgba(255, 131, 122, 0) 28%), linear-gradient(241deg, #b5ac49, rgba(239, 152, 207, 0) 36%), linear-gradient(rgba(255, 255, 255, .25), rgba(255, 255, 255, .25)), url("https://assets-global.website-files.com/657e60478331325e703d1cf1/658191761c0ad8e3be86f725_Imus-Campus-scaled.jpg");
-    background-position: 0 0, 0 0, 0 0, 50% 0;
-    background-size: auto, auto, auto, 1280px;
-    background-attachment: scroll, scroll, scroll, scroll;
+    background-color: var(--back-grey);
+    background-image: linear-gradient(54deg, #3ca55c, rgba(255, 131, 122, 0) 28%), linear-gradient(241deg, #b5ac49, rgba(239, 152, 207, 0) 36%), linear-gradient(rgba(255, 255, 255, .35), rgba(255, 255, 255, .35)), url("/CvSU Alumni Website/Assets/Imus-Campus-scaled.jpg");
+    background-position: 50% 50%;
+    background-size: auto, auto, auto, cover;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
   }
 
   .button {
