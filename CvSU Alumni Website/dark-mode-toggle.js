@@ -2,15 +2,18 @@
 // turn on if newState is "on", otherwise, turn off dark mode
 function toggleDarkMode(newState) {
     var darkModeModification = `<style class='dark-mode-mod'>
-    .logo-div,
     .footer-widget,
     .nav-link,
     .search-section,
-    .button {
+    .button,
+    img[src*="CvSU Alumni Website/Assets/logo.svg"] {
         filter: invert(1);
         transition: filter 0.5s ease;
     }
     body, .nav-bar, .footer, .section, .light-color-gradient {
+        transition: background-color 0.2s ease;
+    }
+    img[src*="/CvSU Alumni Website/Assets/home logo.svg"] {
         transition: background-color 0.2s ease;
     }
 </style>`;
@@ -40,15 +43,19 @@ function toggleDarkMode(newState) {
         }
         // insert style element to remove adjustments
     var darkModeModificationOff = `<style class='dark-mode-mod-off'>
-    .logo-div,
     .footer-widget,
     .nav-link,
     .search-section,
-    .button {
+    .button,
+    img[src*="CvSU Alumni Website/Assets/logo.svg"] {
         transition: filter 0.5s ease;
     }
     body, .nav-bar, .footer, .section, .light-color-gradient {
         transition: background-color 0.2s ease;
+    }
+    img[src*="/CvSU Alumni Website/Assets/home logo.svg"] {
+        fill: #ffffff;
+        transition: fill 0.5s ease;
     }
     </style>`;
 
